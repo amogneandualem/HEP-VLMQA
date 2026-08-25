@@ -1,0 +1,26 @@
+{
+  "model": "GM-LoRA",
+  "papers": 100,
+  "images": 741,
+  "total_qa": 5133,
+  "Token_F1": 0.5347901633286031,
+  "ROUGE_L": 0.5118624579824176,
+  "BERTScore_P": 0.9245093682577288,
+  "BERTScore_R": 0.91425194075854,
+  "BERTScore_F1": 0.919123563598337,
+  "macro_7_task": {
+    "Token_F1": 0.5273805315033293,
+    "ROUGE_L": 0.503962338689946,
+    "BERTScore_F1": 0.9173054920897904
+  },
+  "v1_semantic_4_task_macro": {
+    "Token_F1": 0.6036583751875497,
+    "ROUGE_L": 0.5862876587142063,
+    "BERTScore_F1": 0.9333184311643243
+  },
+  "v2_provenance_3_task_macro": {
+    "Token_F1": 0.4256767399243686,
+    "ROUGE_L": 0.3941952453242657,
+    "BERTScore_F1": 0.8959549066570783
+  }
+}

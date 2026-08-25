@@ -1,0 +1,19 @@
+{
+  "model": "Dedicated-V1-LoRA",
+  "evaluation_set": "shared100_exact_v1",
+  "papers": 100,
+  "images": 741,
+  "total_qa": 3240,
+  "Token_F1": 0.5770593280261705,
+  "ROUGE_L": 0.5587731960183296,
+  "BERTScore_P": 0.9347438406613138,
+  "BERTScore_R": 0.9244278152783711,
+  "BERTScore_F1": 0.929333447398227,
+  "v1_semantic_4_task_macro": {
+    "Token_F1": 0.5821233905324578,
+    "ROUGE_L": 0.5644564585814249,
+    "BERTScore_P": 0.9353847024413133,
+    "BERTScore_R": 0.9251364489503261,
+    "BERTScore_F1": 0.9300060077518271
+  }
+}

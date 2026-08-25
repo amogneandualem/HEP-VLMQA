@@ -1,0 +1,18 @@
+{
+  "experiment": "v1_lora",
+  "status": "success",
+  "global_step": 45792,
+  "best_validation_loss": 1.0142439603805542,
+  "peak_gpu_memory_gb": 16.9483323097229,
+  "train_examples": 366343,
+  "epochs": 1.0,
+  "learning_rate": 0.0001,
+  "gradient_accumulation": 8,
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "lora_targets": [
+    "q_proj",
+    "v_proj"
+  ],
+  "seed": 42
+}

@@ -1,0 +1,26 @@
+{
+  "model": "Repeated-image multitask LoRA",
+  "papers": 100,
+  "images": 741,
+  "total_qa": 5133,
+  "Token_F1": 0.5285403716805439,
+  "ROUGE_L": 0.5063414361762628,
+  "BERTScore_P": 0.9235985226480672,
+  "BERTScore_R": 0.9128333838065419,
+  "BERTScore_F1": 0.9179515214707683,
+  "macro_7_task": {
+    "Token_F1": 0.519679638037117,
+    "ROUGE_L": 0.49729192377170606,
+    "BERTScore_F1": 0.9158788325203123
+  },
+  "v1_semantic_4_task_macro": {
+    "Token_F1": 0.6065649984985536,
+    "ROUGE_L": 0.588288802573967,
+    "BERTScore_F1": 0.9338082909759794
+  },
+  "v2_provenance_3_task_macro": {
+    "Token_F1": 0.4038324907552015,
+    "ROUGE_L": 0.37596275203535817,
+    "BERTScore_F1": 0.8919728879127563
+  }
+}

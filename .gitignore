@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*~
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.backup
+*.pre_clean
+*.original_backup
+
+# Training outputs
+checkpoints/
+outputs/
+adapters/
+weights/
+vision_cache/
+cache/
+
+# Model weights
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+
+# Large generated outputs
+predictions/
+by_paper/
+training_metrics.jsonl
+
+# Local environments and secrets
+.env
+.env.*

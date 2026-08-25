@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "global_step": 30809,
+  "processed_real_groups": 123183,
+  "dataset_size": 124065,
+  "world_size": 4,
+  "best_validation_loss": 1.1196374084466172,
+  "final_adapter": "outputs/grouped_multitask_lora/final_adapter"
+}

@@ -1,0 +1,9 @@
+{
+  "global_step": 31013,
+  "completed": true,
+  "best_validation_loss": 1.3101656010412797,
+  "training_strategy": "pooled_repeated_image_per_qa",
+  "visual_reuse": false,
+  "vision_cache": false,
+  "final_adapter": "outputs/multitask_lora/adapters/final_adapter"
+}

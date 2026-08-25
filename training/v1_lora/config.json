@@ -1,0 +1,26 @@
+{
+  "experiment": "v1_lora",
+  "description": "V1-only LoRA baseline on four scientific figure understanding tasks",
+  "backbone": "LLaVA-OneVision-7B",
+  "train_examples": 366343,
+  "validation_examples": 1000,
+  "maximum_image_side": 768,
+  "epochs": 1.0,
+  "learning_rate": 0.0001,
+  "gradient_accumulation": 8,
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "lora_targets": [
+    "q_proj",
+    "v_proj"
+  ],
+  "gradient_checkpointing": true,
+  "answer_only_logits": true,
+  "seed": 42,
+  "qa_types": [
+    "recognition",
+    "visual_detail",
+    "interpretation",
+    "reasoning"
+  ]
+}
