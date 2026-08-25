@@ -2,11 +2,22 @@
 
 **HEP-VLMQA: Benchmarking Scientific Figure Understanding with Grouped Multitask LoRA Training**
 
+[![Dataset](https://img.shields.io/badge/🤗%20Dataset-Hugging%20Face-yellow)](https://huggingface.co/datasets/amogneandualem/HEP-VLMQA)
+
 HEP-VLMQA is a multimodal benchmark and training framework for scientific figure understanding in high-energy physics (HEP). It combines **Scientific Figure Understanding** with **Scientific Provenance Reconstruction** and provides a reproducible workflow from scientific-paper processing and benchmark construction to LoRA fine-tuning and evaluation.
 
 The repository also provides **Grouped Multitask LoRA (GM-LoRA)**, a multitask adaptation strategy that groups multiple QA instances associated with the same scientific figure to reduce redundant visual processing during training.
 
 ---
+
+
+## Dataset
+
+The HEP-VLMQA dataset is publicly available on Hugging Face:
+
+**[HEP-VLMQA Dataset on Hugging Face](https://huggingface.co/datasets/amogneandualem/HEP-VLMQA)**
+
+The dataset contains the benchmark QA annotations and associated metadata for Scientific Figure Understanding and Scientific Provenance Reconstruction.
 
 ## Overview
 
