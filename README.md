@@ -76,13 +76,29 @@ The broader source corpus contains 125,545 scientific images. The canonical benc
 
 <p align="center">
   <img src="assets/hep_vlmqa_pipeline.svg"
-       alt="HEP-VLMQA benchmark construction, training, and evaluation pipeline"
+       alt="HEP-VLMQA dataset construction, training, and evaluation pipeline"
        width="100%">
 </p>
 
-The workflow covers scientific-paper processing, V1 Scientific Figure Understanding QA construction, V2 Scientific Provenance Reconstruction, benchmark assembly, locked paper-level splitting, LoRA adaptation, and held-out evaluation.
+The workflow combines deterministic preprocessing and validation with LLM-assisted benchmark construction.
 
-The SVG contains a permanent white canvas, so the workflow itself remains white when GitHub is viewed in dark mode.
+| Stage | Main method |
+|---|---|
+| Paper processing | MinerU extraction of figures, captions, paper text, and local context |
+| Preprocessing | Cleaning, deduplication, rule-based domain/image-type classification, similarity grouping, and physics-keyword extraction |
+| Semantic generation | OpenAI-compatible LLM generation of scientific figure semantics |
+| V1 QA construction | Multimodal QA generation for Recognition, Visual Detail, Interpretation, and Reasoning |
+| V1 quality control | Rule screening followed by GPT-4o validation and one repair/revalidation pass |
+| V2 provenance construction | Multimodal LLM generation for Inputs, Method, and Figure Generation |
+| V2 quality control | AutoResearch offline provenance audit |
+| Dataset assembly | Common seven-task schema with canonical paper/image/QA identifiers |
+| Split validation | Locked paper-level splits plus identifier and image-hash leakage checks |
+| V1 LoRA | Joint adaptation on the four Scientific Figure Understanding tasks |
+| Multi-task LoRA | Seven-task repeated-image-per-QA training without visual-feature reuse |
+| GM-LoRA | Seven-task grouping by scientific figure with shared visual processing |
+| Evaluation | Deterministic image + question inference using Token-F1, ROUGE-L F1, and BERTScore F1 |
+
+LLM assistance is used for semantic generation, QA generation, and V1 validation. Dataset cleaning, canonical assembly, leakage checks, and the AutoResearch provenance audit are deterministic/offline stages.
 
 ---
 
