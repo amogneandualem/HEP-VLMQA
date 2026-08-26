@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1500"
+     height="620"
+     viewBox="0 0 1500 620">
+
+  <!-- Permanent white background -->
+  <rect width="1500" height="620" fill="#ffffff"/>
+
+  <defs>
+    <marker id="arrow"
+            markerWidth="10"
+            markerHeight="10"
+            refX="8"
+            refY="3"
+            orient="auto"
+            markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#444444"/>
+    </marker>
+
+    <style>
+      .box {
+        fill: #ffffff;
+        stroke: #333333;
+        stroke-width: 2;
+        rx: 10;
+      }
+
+      .family {
+        fill: #f5f5f5;
+        stroke: #333333;
+        stroke-width: 2;
+        rx: 10;
+      }
+
+      .title {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 23px;
+        font-weight: 700;
+        fill: #111111;
+        text-anchor: middle;
+      }
+
+      .text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        fill: #111111;
+        text-anchor: middle;
+      }
+
+      .small {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        fill: #333333;
+        text-anchor: middle;
+      }
+
+      .arrow {
+        stroke: #444444;
+        stroke-width: 2.2;
+        fill: none;
+        marker-end: url(#arrow);
+      }
+
+      .section {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        fill: #333333;
+      }
+    </style>
+  </defs>
+
+  <text x="750" y="38" class="title">
+    HEP-VLMQA Benchmark Construction and Training Pipeline
+  </text>
+
+  <!-- Dataset construction -->
+  <text x="55" y="82" class="section">Dataset construction</text>
+
+  <rect x="55" y="105" width="190" height="74" class="box"/>
+  <text x="150" y="135" class="text">HEP Scientific</text>
+  <text x="150" y="158" class="text">Papers</text>
+
+  <rect x="300" y="105" width="190" height="74" class="box"/>
+  <text x="395" y="135" class="text">MinerU Paper</text>
+  <text x="395" y="158" class="text">Processing</text>
+
+  <rect x="545" y="105" width="190" height="74" class="box"/>
+  <text x="640" y="135" class="text">Metadata</text>
+  <text x="640" y="158" class="text">Preprocessing</text>
+
+  <rect x="790" y="105" width="190" height="74" class="box"/>
+  <text x="885" y="135" class="text">Semantic Concept</text>
+  <text x="885" y="158" class="text">Generation</text>
+
+  <line x1="245" y1="142" x2="292" y2="142" class="arrow"/>
+  <line x1="490" y1="142" x2="537" y2="142" class="arrow"/>
+  <line x1="735" y1="142" x2="782" y2="142" class="arrow"/>
+
+  <!-- V1 -->
+  <rect x="1035" y="78" width="205" height="92" class="family"/>
+  <text x="1137" y="108" class="text">V1</text>
+  <text x="1137" y="133" class="small">Scientific Figure</text>
+  <text x="1137" y="154" class="small">Understanding QA</text>
+
+  <!-- V2 -->
+  <rect x="1035" y="195" width="205" height="92" class="family"/>
+  <text x="1137" y="225" class="text">V2</text>
+  <text x="1137" y="250" class="small">Scientific Provenance</text>
+  <text x="1137" y="271" class="small">Reconstruction QA</text>
+
+  <path d="M980 142 L1010 142 L1010 124 L1027 124" class="arrow"/>
+  <path d="M980 142 L1010 142 L1010 241 L1027 241" class="arrow"/>
+
+  <rect x="1285" y="195" width="160" height="92" class="box"/>
+  <text x="1365" y="227" class="text">Provenance</text>
+  <text x="1365" y="250" class="text">QA Audit</text>
+
+  <line x1="1240" y1="241" x2="1277" y2="241" class="arrow"/>
+
+  <!-- Assembly -->
+  <rect x="565" y="330" width="250" height="80" class="box"/>
+  <text x="690" y="363" class="text">Canonical HEP-VLMQA</text>
+  <text x="690" y="387" class="text">Dataset Assembly</text>
+
+  <path d="M1137 170 L1137 307 L815 307 L815 330" class="arrow"/>
+  <path d="M1365 287 L1365 307 L815 307" class="arrow"/>
+
+  <rect x="875" y="330" width="210" height="80" class="box"/>
+  <text x="980" y="362" class="text">Locked Paper-Level</text>
+  <text x="980" y="386" class="text">Splits</text>
+
+  <line x1="815" y1="370" x2="867" y2="370" class="arrow"/>
+
+  <!-- Training -->
+  <text x="55" y="465" class="section">Training and evaluation</text>
+
+  <rect x="185" y="485" width="190" height="75" class="box"/>
+  <text x="280" y="515" class="text">V1 LoRA</text>
+  <text x="280" y="540" class="small">4 understanding tasks</text>
+
+  <rect x="435" y="485" width="210" height="75" class="box"/>
+  <text x="540" y="515" class="text">Multi-task LoRA</text>
+  <text x="540" y="540" class="small">Repeated-image training</text>
+
+  <rect x="705" y="485" width="210" height="75" class="box"/>
+  <text x="810" y="515" class="text">GM-LoRA</text>
+  <text x="810" y="540" class="small">Grouped image + multi-QA</text>
+
+  <rect x="1010" y="485" width="205" height="75" class="box"/>
+  <text x="1112" y="515" class="text">Held-Out</text>
+  <text x="1112" y="540" class="small">Answer Generation</text>
+
+  <rect x="1280" y="485" width="165" height="75" class="box"/>
+  <text x="1362" y="511" class="text">Evaluation</text>
+  <text x="1362" y="535" class="small">Token-F1 · ROUGE-L</text>
+  <text x="1362" y="553" class="small">BERTScore F1</text>
+
+  <path d="M980 410 L980 447 L280 447 L280 477" class="arrow"/>
+  <path d="M980 410 L980 447 L540 447 L540 477" class="arrow"/>
+  <path d="M980 410 L980 447 L810 447 L810 477" class="arrow"/>
+
+  <line x1="375" y1="523" x2="427" y2="523" class="arrow"/>
+  <line x1="645" y1="523" x2="697" y2="523" class="arrow"/>
+
+  <line x1="915" y1="523" x2="1002" y2="523" class="arrow"/>
+  <line x1="1215" y1="523" x2="1272" y2="523" class="arrow"/>
+
+</svg>
