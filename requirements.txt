@@ -1,0 +1,22 @@
+# Core data and image processing
+numpy>=1.26
+pandas>=2.0
+pillow>=10.0
+tqdm>=4.66
+requests>=2.31
+
+# API-backed benchmark generation
+openai>=1.30
+
+# Vision-language model training and inference
+torch>=2.1
+torchvision>=0.16
+transformers>=4.48
+peft>=0.14
+accelerate>=1.0
+safetensors>=0.4
+sentencepiece>=0.2
+
+# Evaluation
+rouge-score>=0.1.2
+bert-score>=0.3.13
