@@ -504,16 +504,25 @@ Third-party scientific papers, figures, pretrained models, and external resource
 
 ## Citation
 
-If you use HEP-VLMQA, please cite the accompanying paper.
+If you use HEP-VLMQA in your research, please cite:
 
-Citation metadata is provided in [`CITATION.cff`](CITATION.cff).
+```bibtex
+@misc{hepvlmqa2026,
+  title  = {A Visual Question Answering Dataset for Benchmarking Vision-Language Models in High-Energy Physics},
+  author = {Andualem, Amogne and others},
+  year   = {2026},
+  url    = {https://github.com/amogneandualem/HEP-VLMQA}
+}
+```
 
-The final paper citation can be added when publication metadata becomes available.
+Machine-readable repository citation metadata is available in [`CITATION.cff`](CITATION.cff).
+
+The journal name and DOI will be added after formal publication.
 
 ---
 
 ## License
 
-See [`LICENSE`](LICENSE).
+The source code in this repository is released under the [MIT License](LICENSE).
 
-Third-party scientific papers, figures, pretrained models, and external datasets remain subject to their respective licenses and usage conditions.
+The HEP-VLMQA dataset is distributed separately through Hugging Face and is governed by the license specified on the dataset repository. Third-party scientific papers, figures, pretrained models, and external resources remain subject to their respective licenses and usage conditions.
